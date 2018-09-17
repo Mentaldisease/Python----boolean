@@ -1,5 +1,0 @@
-None为False
-数字类型（整形，浮点。。。），0为False，其他为True
-列表类型（list，tuple，。。。），长度为0的为False，其他为True
-Map类型（字典），条目个数为0的为False，其他为True
-任何其他类型的对象均为True
