@@ -1,0 +1,70 @@
+课堂练习：
+
+1.‘hello,world’.replease('l','*')
+
+2.('Good{}'.format('!')) * 3
+
+3.'FhIqoWe92QbvC'.swapcase()
+
+4.str = 'FhIqoWe92QbvC'
+  num ''.join([x for x in str if x.isdigit()])
+  print(num)
+
+5.lst = [2, 0, 3, 6, 9]
+  sorted(lst)
+
+6.l = [2, 3, 1, 2, 4, 3]
+  print(list(set(l)))
+
+7.n ='aasdebbcaa'
+  d{}
+  for c in n:
+      if(c in d):
+          d[c] = (d[c] + 1)
+      else:
+          d[c] = 1
+
+  print(d)
+  
+8.string1 = 'hello world 2333#!:|'
+def strInNumber(str):
+    number=0 
+    letter=0 
+    blank=0  
+    other=0  
+    for i in range(0,len(str)):
+        if ord(str[i])>=0 and ord(str[i])<=9:
+            number+=1
+        elif (ord(str[i])>'a' and ord(str[i])<='z') or (ord(str[i])>='A' and ord(str[i])<='Z'):#判断字符是否为字母
+            letter+=1
+        elif ord(str[i])=='':
+            blank+=1
+        else:
+            other+=1
+    print("该字符串中数字有%d个,字母%d个,空格%d个,其他的%d个." % (number, letter, blank, other))
+
+strInNumber(string)
+
+9.string2 = 'a b c'
+  def space(str):
+      if string2.isspace():
+          string2.replace(' ','')
+
+  print(str(string2))
+
+10.
+import random
+def guess_number():
+    true_num = random.randint(1, 100)
+    user_num = int(input("请输入一个整数:"))
+    count = 1
+    while true_num != user_num:
+        if true_num > user_num:
+            print("太小了，请重新输入！")
+        elif true_num < user_num:
+            print("太大了，请重新输入！")
+        count += 1
+        user_num = int(input("请输入一个整数："))
+    print("恭喜您，您猜对了！您一共猜了%d次" % count)
+
+guess_number()
